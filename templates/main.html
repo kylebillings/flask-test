@@ -52,11 +52,49 @@
   font-size: 13em;
   color: #fff;
   -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+  -moz-animation-duration: 2s; /* Chrome, Safari, Opera */
   animation-duration: 2s;
   -webkit-animation-name: beating;
+  -moz-animation-name: beating;
   animation-name: beating;
+  -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+@-moz-keyframes beating {
+   0%, 20%, 100% {
+     -ms-transform: scale(0.8); /* IE 9 */
+ 	-webkit-transform: scale(0.8); /* Safari and Chrome */
+ 	-o-transform: scale(0.8); /* Opera */
+ 	-moz-transform: scale(0.8);
+ 	transform: scale(0.8);
+     opacity: 0.2;
+   }
+
+   25% {
+     -ms-transform: scale(0.9); /* IE 9 */
+ 	-webkit-transform: scale(0.9); /* Safari and Chrome */
+ 	-o-transform: scale(0.9); /* Opera */
+ 	-moz-transform: scale(0.9);
+ 	transform: scale(0.9);
+     opacity: 1;
+   }
+   35% {
+     -ms-transform: scale(0.8); /* IE 9 */
+ 	-webkit-transform: scale(0.8); /* Safari and Chrome */
+ 	-o-transform: scale(0.8); /* Opera */
+ 	-moz-transform: scale(0.8);
+ 	transform: scale(0.8);
+   }
+   40% { 
+     -ms-transform: scale(1); /* IE 9 */
+ 	-webkit-transform: scale(1); /* Safari and Chrome */
+ 	-o-transform: scale(1); /* Opera */
+ 	-moz-transform: scale(1);
+ 	transform: scale(1);
+     opacity: 1;
+   } 
 }
 
 @-webkit-keyframes beating {

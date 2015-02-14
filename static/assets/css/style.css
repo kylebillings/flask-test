@@ -409,6 +409,14 @@ a {
     font-size: 4rem;
   }
 }
+@-moz-keyframes animate-love {
+  0% {
+    background-position: 0 3200px;
+  }
+  100% {
+    background-position: 3200px 0;
+  }
+}
 @-webkit-keyframes animate-love {
   0% {
     background-position: 0 3200px;
