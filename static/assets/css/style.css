@@ -386,16 +386,16 @@ a {
     font-size: 3rem;
     font-weight bold;
     text-align: center;
-    background: -webkit--webkit-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -webkit--moz-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -webkit--o-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -webkit--ms-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -webkit-linear-gradient(to right, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -webkit-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -moz-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -o-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: -ms-linear-gradient(left, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
-    background: linear-gradient(to right, #fff, #fff1bf, #ffaeac, #fff1bf, #fff);
+    background: -webkit--webkit-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -webkit--moz-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -webkit--o-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -webkit--ms-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -webkit-linear-gradient(to right, #fff, #ffaeac, #fff);
+    background: -webkit-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -moz-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -o-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: -ms-linear-gradient(left, #fff, #ffaeac, #fff);
+    background: linear-gradient(to right, #fff, #ffaeac, #fff);
     -webkit-background-size: 3200px 200px;
     -moz-background-size: 3200px 200px;
     background-size: 3200px 200px;
@@ -472,6 +472,16 @@ a {
 	border-bottom: 1px solid #fff;
 	font-size: 4em;
 	text-align: center;
+}
+@media only screen and (max-width: 720px) {
+	#love-form input[type="text"] {
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#love-form input[type="text"] {
+		font-size: 1em;
+	}
 }
 #love-form input:focus, textarea:focus {
     outline: none;
